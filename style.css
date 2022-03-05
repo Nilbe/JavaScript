@@ -5,6 +5,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-color: darkcyan;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -29,4 +33,15 @@ main p{
 .list-header input{
     outline: auto;
     outline-color: black;
+}
+
+.list-header span{
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+
+    margin: 50px;
 }
