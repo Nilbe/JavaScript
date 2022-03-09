@@ -1,10 +1,29 @@
-let newtodoButton = document.getElementById("newtodo");
-let todo = document.getElementById("todo");
-let input = document.getElementById("input");
+function newtodo() {
+    let li = document.createElement("li");
 
-newtodoButton.addEventListener('click', function(){
-  let paragraph = document.getElementById('p')
-  paragraph.innerText = input.nodeValue;
-  todo.appendChild(paragraph);
+    let inputValue = document.getElementById("todo").value;
 
-})
+    let t = document.createTextNode(inputValue);
+
+    li.appendChild(t);
+
+    if (inputValue === '') {
+    } 
+    else {
+      document.getElementById("ul").appendChild(li);
+    }
+
+    document.getElementById("todo").value = "";
+  
+    let span = document.createElement("SPAN");  
+
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        let div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }

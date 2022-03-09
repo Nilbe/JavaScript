@@ -25,3 +25,23 @@ main p{
     line-height: 150%;
 }
 
+.list-header{
+    display: block;
+    text-align: center;
+}
+
+.list-header input{
+    outline: auto;
+    outline-color: black;
+}
+
+.list-header span{
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+
+    margin: 50px;
+}
